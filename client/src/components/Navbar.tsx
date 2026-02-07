@@ -14,7 +14,7 @@ export default function Navbar() {
           <a className="flex items-center gap-2 group">
             <div className="w-8 h-8 relative overflow-hidden rounded bg-black">
               <img 
-                src="/attached_assets/image_1770446326044.png" 
+                src="/attached_assets/Giruai_Logo_1770448650362.png" 
                 alt="Giru.ai Logo" 
                 className="w-full h-full object-contain"
               />

@@ -98,7 +98,7 @@ export default function Home() {
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 transition-all">
             <img 
-              src="/attached_assets/image_1770446326044.png" 
+              src="/attached_assets/Giruai_Logo_1770448650362.png" 
               alt="Giru.ai Logo" 
               className="w-6 h-6 object-contain"
             />
