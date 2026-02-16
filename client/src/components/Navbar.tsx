@@ -43,7 +43,7 @@ export default function Navbar() {
             className="hidden sm:flex hover:bg-white/5"
             asChild
           >
-            <a href="https://meet.giru.ai/login" target="_blank" rel="noopener noreferrer">
+            <a href={`${import.meta.env.VITE_EKP_URL}/login`} target="_blank" rel="noopener noreferrer">
               Log in
             </a>
           </Button>
@@ -51,7 +51,7 @@ export default function Navbar() {
             className="bg-primary hover:bg-primary/90 text-white font-medium shadow-[0_0_20px_rgba(24,116,255,0.3)] hover:shadow-[0_0_30px_rgba(24,116,255,0.5)] transition-all"
             asChild
           >
-            <a href="https://meet.giru.ai/signup" target="_blank" rel="noopener noreferrer">
+            <a href={`${import.meta.env.VITE_EKP_URL}/signup`} target="_blank" rel="noopener noreferrer">
               Get Started
             </a>
           </Button>

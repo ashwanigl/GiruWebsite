@@ -38,12 +38,12 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground selection:bg-primary/30">
       <Navbar />
-      
+
       <main>
         <Hero />
-        
+
         <section id="products" className="py-24 container mx-auto px-4">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -87,12 +87,12 @@ export default function Home() {
                 className="flex-1 bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
               />
               <a
-                href="https://meet.giru.ai/signup"
+                href={`${import.meta.env.VITE_EKP_URL}/signup`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-lg transition-colors"
               >
-                Get Early Access
+                Get Started
               </a>
             </div>
           </div>
@@ -102,9 +102,9 @@ export default function Home() {
       <footer className="py-12 border-t border-white/10 bg-black/50">
         <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="flex items-center gap-2 opacity-50 grayscale hover:grayscale-0 transition-all">
-            <img 
-              src="/attached_assets/Giruai_Logo_1770448650362.png" 
-              alt="Giru.ai Logo" 
+            <img
+              src="/attached_assets/Giruai_Logo_1770448650362.png"
+              alt="Giru.ai Logo"
               className="w-6 h-6 object-contain"
             />
             <span className="font-display font-bold text-lg">giru.ai</span>

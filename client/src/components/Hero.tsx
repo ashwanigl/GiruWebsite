@@ -26,20 +26,20 @@ export default function Hero() {
               </span>
               Global Communication Revolution
             </span>
-            
+
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
               Talk to Anyone, <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-blue-400">Anywhere.</span>
             </h1>
           </motion.div>
 
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto"
           >
-            The future of organizational knowledge starts with universal connection. 
+            The future of organizational knowledge starts with universal connection.
             Chat seamlessly across languages and borders with Giru.ai.
           </motion.p>
 
@@ -54,8 +54,8 @@ export default function Hero() {
               className="h-12 px-8 text-base bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(24,116,255,0.4)] transition-all"
               asChild
             >
-              <a href="https://meet.giru.ai/meetings" target="_blank" rel="noopener noreferrer">
-                Start Chatting <ArrowRight className="ml-2 w-4 h-4" />
+              <a href={`${import.meta.env.VITE_EKP_URL}/meetings`} target="_blank" rel="noopener noreferrer">
+                Let's Meet Now <ArrowRight className="ml-2 w-4 h-4" />
               </a>
             </Button>
             <Button
@@ -71,7 +71,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Feature Grid */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.3 }}
@@ -84,7 +84,7 @@ export default function Hero() {
               <h3 className="text-lg font-bold mb-2">Universal Translation</h3>
               <p className="text-sm text-muted-foreground">Real-time translation for seamless cross-border communication.</p>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors group">
               <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center mb-4 text-secondary group-hover:scale-110 transition-transform">
                 <Layers className="w-6 h-6" />
@@ -92,7 +92,7 @@ export default function Hero() {
               <h3 className="text-lg font-bold mb-2">Knowledge Capture</h3>
               <p className="text-sm text-muted-foreground">Automatically index and organize business insights from conversations.</p>
             </div>
-            
+
             <div className="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm hover:bg-white/10 transition-colors group">
               <div className="w-12 h-12 rounded-lg bg-blue-400/20 flex items-center justify-center mb-4 text-blue-400 group-hover:scale-110 transition-transform">
                 <Zap className="w-6 h-6" />
