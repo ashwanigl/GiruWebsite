@@ -43,17 +43,30 @@ export default function Hero() {
             Chat seamlessly across languages and borders with Giru.ai.
           </motion.p>
 
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-col sm:flex-row items-center justify-center gap-4"
           >
-            <Button size="lg" className="h-12 px-8 text-base bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(24,116,255,0.4)] transition-all">
-              Start Chatting <ArrowRight className="ml-2 w-4 h-4" />
+            <Button
+              size="lg"
+              className="h-12 px-8 text-base bg-primary hover:bg-primary/90 text-white shadow-[0_0_20px_rgba(24,116,255,0.4)] transition-all"
+              asChild
+            >
+              <a href="https://meet.giru.ai/meetings" target="_blank" rel="noopener noreferrer">
+                Start Chatting <ArrowRight className="ml-2 w-4 h-4" />
+              </a>
             </Button>
-            <Button size="lg" variant="outline" className="h-12 px-8 text-base border-white/10 hover:bg-white/5 hover:text-white">
-              Explore Products
+            <Button
+              size="lg"
+              variant="outline"
+              className="h-12 px-8 text-base border-white/10 hover:bg-white/5 hover:text-white"
+              asChild
+            >
+              <a href="#products">
+                Explore Products
+              </a>
             </Button>
           </motion.div>
 

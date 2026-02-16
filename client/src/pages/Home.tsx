@@ -80,16 +80,21 @@ export default function Home() {
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
               Join thousands of users breaking down barriers with Giru.ai.
             </p>
-            <form className="max-w-md mx-auto flex gap-2">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
+            <div className="max-w-md mx-auto flex gap-2">
+              <input
+                type="email"
+                placeholder="Enter your email"
                 className="flex-1 bg-white/5 border border-white/10 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
               />
-              <button className="bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-lg transition-colors">
+              <a
+                href="https://meet.giru.ai/signup"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-primary hover:bg-primary/90 text-white font-medium px-6 py-3 rounded-lg transition-colors"
+              >
                 Get Early Access
-              </button>
-            </form>
+              </a>
+            </div>
           </div>
         </section>
       </main>
