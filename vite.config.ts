@@ -4,13 +4,17 @@ import tailwindcss from "@tailwindcss/vite";
 import path from "path";
 import runtimeErrorOverlay from "@replit/vite-plugin-runtime-error-modal";
 import { metaImagesPlugin } from "./vite-plugin-meta-images";
+import { copyAssetsPlugin } from "./vite-plugin-copy-assets";
 
 export default defineConfig({
+  // Set base to '/' for custom domain, or '/GiruWebsite/' for GitHub Pages subdirectory
+  base: process.env.GITHUB_PAGES ? '/GiruWebsite/' : '/',
   plugins: [
     react(),
     runtimeErrorOverlay(),
     tailwindcss(),
     metaImagesPlugin(),
+    copyAssetsPlugin(),
     ...(process.env.NODE_ENV !== "production" &&
     process.env.REPL_ID !== undefined
       ? [
